@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados essenciais do documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade para dispositivos móveis -->
+    <title> Fisioterapia </title> <!-- Título da página -->
+
+    <!-- Link para ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Ícone do site (favicon) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS principal do site -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Pré-carregamento da fonte "Roboto Condensed" -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Carregamento alternativo para casos de JavaScript desativado -->
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    </noscript>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="header-container">
+            <!-- Logo da clínica -->
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo FisioMais"></a>
+            </div>
+
+            <!-- Barra de navegação principal -->
+            <nav id="navbar" aria-label="Menu principal">
+                <ul class="menu">
+                    <!-- Itens do menu -->
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="avaliacao_inicial.html" class="active"><i class="fas fa-stethoscope"></i> Avaliação
+                            Inicial </a></li>
+                    <li><a href="acompanhamento_personalizado.html" class="active"><i class="fas fa-user-check"></i>
+                            Acompanhamento Personalizado </a></li>
+                    <li><a href="sobre.html" class="active"><i class="fas fa-info-circle"></i> Sobre </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de informações sobre a clínica -->
+    <section class="about-us">
+        <main class="container">
+            <h2>Nossos Serviços de Fisioterapia</h2>
+            <p>Conheça os serviços que a FisioMais oferece para ajudar você a alcançar uma recuperação eficiente e uma
+                qualidade de vida melhor.</p>
+
+            <!-- Início das Especialidades de Fisioterapia -->
+            <div class="specialties">
+                <!-- Cada div representa uma especialidade -->
+
+                <!-- Reabilitação Ortopédica -->
+                <div class="specialty">
+                    <i class="fas fa-dumbbell fa-3x"></i>
+                    <h3>Reabilitação Ortopédica</h3>
+                    <p>Tratamentos focados na recuperação de lesões musculoesqueléticas, promovendo o fortalecimento e
+                        mobilidade.</p>
+                </div>
+
+                <!-- Reabilitação Funcional -->
+                <div class="specialty">
+                    <i class="fas fa-walking fa-3x"></i>
+                    <h3>Reabilitação Funcional</h3>
+                    <p>Programas personalizados para recuperação funcional, com foco na melhoria da capacidade física e
+                        independência.</p>
+                </div>
+
+                <!-- Controle da Dor Crônica -->
+                <div class="specialty">
+                    <i class="fas fa-spa fa-3x"></i>
+                    <h3>Controle da Dor Crônica</h3>
+                    <p>Terapias e técnicas para aliviar dores crônicas e melhorar o bem-estar dos pacientes.</p>
+                </div>
+
+                <!-- Fisioterapia Cardiorrespiratória -->
+                <div class="specialty">
+                    <i class="fas fa-heartbeat fa-3x"></i>
+                    <h3>Fisioterapia Cardiorrespiratória</h3>
+                    <p>Intervenções para pacientes com problemas respiratórios e cardiovasculares, melhorando a
+                        resistência e saúde geral.</p>
+                </div>
+
+                <!-- Equilíbrio e Prevenção de Quedas -->
+                <div class="specialty">
+                    <i class="fas fa-balance-scale fa-3x"></i>
+                    <h3>Equilíbrio e Prevenção de Quedas</h3>
+                    <p>Treinamentos específicos para melhorar o equilíbrio e prevenir quedas, especialmente em idosos.
+                    </p>
+                </div>
+
+                <!-- Fisioterapia Neurológica -->
+                <div class="specialty">
+                    <i class="fas fa-brain fa-3x"></i>
+                    <h3>Fisioterapia Neurológica</h3>
+                    <p>Reabilitação voltada para pacientes com doenças neurológicas, promovendo melhora na mobilidade e
+                        qualidade de vida.</p>
+                </div>
+
+                <!-- Fisioterapia Geriátrica -->
+                <div class="specialty">
+                    <i class="fas fa-users fa-3x"></i>
+                    <h3>Fisioterapia Geriátrica</h3>
+                    <p>Cuidados especializados para idosos, com foco em mobilidade, força e prevenção de quedas.</p>
+                </div>
+
+                <!-- Fisioterapia Pediátrica -->
+                <div class="specialty">
+                    <i class="fas fa-child fa-3x"></i>
+                    <h3>Fisioterapia Pediátrica</h3>
+                    <p>Tratamentos direcionados para o desenvolvimento motor infantil, ajudando crianças com
+                        necessidades específicas.</p>
+                </div>
+            </div>
+            <!-- Fim das Especialidades de Fisioterapia -->
+        </main>
+    </section>
+
+      <!-- Rodapé com informações de contato e redes sociais -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo no rodapé -->
+            <div class="footer-section logo">
+                <a href="index.html"><img src="logorodape.png" alt="Logo FisioMais"></a>
+            </div>
+
+            <!-- Informações de contato -->
+            <div class="footer-section contact">
+                <h4>Contato</h4>
+                <p>Email: contato@fisiomais.com</p>
+                <p>Telefone: (61) 90001-9999</p>
+                <p>Endereço: Asa Sul, Brasília - DF</p>
+            </div>
+
+                 <!-- Links para redes sociais da clínica, com ícones e acessibilidade -->
+            <div class="footer-section social-media">
+                <h4>Siga-nos</h4>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank" aria-label="Twitter (X)"><i
+                        class="fab fa-x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://br.linkedin.com/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+            <!-- Informações de copyright e aviso do projeto acadêmico -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 FisioMais. Todos os direitos reservados.</p>
+            <p>Este site é um projeto acadêmico do curso Técnico em Informática, ETB (Escola Técnica de Brasília). Não
+                representa uma entidade real.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

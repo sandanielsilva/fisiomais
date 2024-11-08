@@ -1,0 +1,525 @@
+/* Reset básico para margem, preenchimento e tamanho da caixa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo altura total para html e body */
+html,
+body {
+    height: 100%;
+}
+
+/* Removendo o estilo de lista padrão */
+ul {
+    list-style: none;
+}
+
+/* Estilos de fonte e cor padrão para o body */
+body {
+    user-select: none;
+    font-size: 1rem;
+    line-height: 1.3;
+    background-color: #26aba721;
+    color: #717171;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Slideshow - estilos para o contêiner */
+.hero-slideshow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-slideshow .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Transição e alinhamento de slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    display: none;
+
+}
+
+/* Exibindo apenas o slide ativo */
+.slide.active {
+    display: block;
+
+}
+
+/* Estilos para as setas de navegação do slideshow */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Cor de fundo ao passar o mouse sobre as setas */
+.arrow:hover {
+    background-color: #26aba763
+}
+
+
+
+/* Header - fundo e espaçamento */
+header {
+    background-color: #1e8d8a;
+    ;
+    padding: 1rem 0;
+}
+
+
+
+/* Centralização de conteúdo no header */
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo - limite de largura */
+.logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Menu de navegação */
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilos para o menu */
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo para o link ativo no menu */
+.menu a.active {
+
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Efeito hover para links do menu */
+.menu a:hover {
+
+    color: #02c4c6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    transform: translateY(-3px);
+}
+
+/* Estilo do botão da seção "Sobre" */
+.about-us .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #1e8d8a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de hover apenas no botão da seção "Sobre" */
+.about-us .btn:hover {
+    background-color: #02c4c6;
+    color: #fff;
+}
+
+
+
+/* Centralização e layout de contêiner principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+/* Estilos para títulos */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1e8d8a;
+    margin-top: 30px;
+}
+
+/* Rodapé - cores e espaçamento */
+footer {
+    background-color: #1e8d8a;
+    color: #ffffff;
+    padding: 2rem 0;
+    position: relative;
+}
+
+/* Layout do contêiner do rodapé */
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Seções de conteúdo no rodapé */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Links e parágrafos no rodapé */
+.footer-section p,
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Redes sociais no rodapé */
+.social-media ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #02c4c6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* Seção "Sobre Nós" */
+.about-us {
+
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #7a7a7a;
+    margin-bottom: 30px;
+}
+
+/* Estilos para especialidades */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.specialties {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    text-align: center;
+
+}
+
+.specialty {
+    background-color: #26aba721;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.specialty:hover {
+    transform: translateY(-5px);
+}
+
+.specialty i {
+    color: #02c4c6;
+    ;
+
+}
+
+.specialty h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.specialty p {
+    color: #7a7a7a;
+
+}
+
+/* Estilos para a seção "Nossos Serviços" */
+.services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.service-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #26aba721;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item i {
+    color: #1e8d8a;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #7a7a7a;
+}
+
+/* Dicas de Saúde */
+.tips {
+    padding: 0px 0;
+    text-align: center;
+}
+
+.tips h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.health-tips {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+}
+
+.health-tips li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #7a7a7a;
+    margin-bottom: 15px;
+}
+
+
+
+/* Botão do WhatsApp - posição fixa */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Estilo do botão do WhatsApp */
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+/* Cor escura ao passar o mouse */
+.whatsapp-button:hover {
+    background-color: #1e8d8a;
+
+}
+
+/* Estilo da mensagem */
+.whatsapp-tooltip {
+    display: none;
+    background-color: #555555;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 250px;
+    text-align: center;
+    z-index: 999;
+
+}
+
+/* Mostraa a mensagem ao passar o mouse */
+.whatsapp-button:hover+.whatsapp-tooltip {
+    display: block;
+    /* Exibe a mensagem ao passar o mouse sobre o botão */
+}
+
+/* Estilos para a página de login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    background-color: #1e8d8a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-container button:hover {
+    background-color: #02c4c6;
+}
+
+/* Estilos para mensagens de aviso e redirecionamento */
+.warning-message {
+    color: #D9534F;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.redirect-message {
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.redirect-message a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redirect-message a:hover {
+    text-decoration: underline;
+}
+

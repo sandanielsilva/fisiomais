@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Declara o tipo de documento como HTML5 e define o idioma como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade para se ajustar a diferentes tamanhos de tela -->
+    <title>Sobre</title> <!-- Título da página, que aparece na aba do navegador -->
+
+    <!-- Link para o favicon, o ícone que aparece na aba do navegador -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Link para o arquivo CSS principal da página -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Pré-carrega a fonte Roboto Condensed de maneira otimizada -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <!-- Caso o navegador não tenha suporte para JavaScript, carrega a fonte de forma padrão -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Link para a biblioteca de ícones Font Awesome, carregada de maneira otimizada -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        media="all" onload="this.media='all'">
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="header-container"> <!-- Container para alinhar os itens do cabeçalho -->
+            <div class="logo">
+                <!-- Link para a página inicial com o logotipo da clínica -->
+                <a href="index.html"><img src="logo.png" alt="Logo FisioMais"></a>
+            </div>
+            <!-- Navegação principal do site -->
+            <nav id="navbar" aria-label="Menu principal">
+                <ul class="menu">
+                    <!-- Links de navegação para diferentes páginas da clínica -->
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="avaliacao_inicial.html" class="active"><i class="fas fa-stethoscope"></i> Avaliação
+                            Inicial</a></li>
+                    <li><a href="acompanhamento_personalizado.html" class="active"><i class="fas fa-user-check"></i>
+                            Acompanhamento Personalizado</a></li>
+                    <li><a href="fisioterapia.html" class="active"><i class="fas fa-plus-circle"></i> Fisioterapia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção principal "Sobre Nós" -->
+    <section class="about-us">
+        <main class="container">
+            <h2>Sobre a FisioMais</h2> <!-- Título da seção -->
+
+            <!-- Texto descritivo sobre a clínica e seus serviços -->
+            <p>A FisioMais é a única clínica da região totalmente especializada em fisioterapia e reabilitação, com um
+                foco constante na recuperação e no bem-estar de cada paciente. Nossa missão é proporcionar serviços de
+                fisioterapia de alta qualidade, priorizando a satisfação e o conforto dos nossos pacientes.</p>
+
+            <p>Dispomos de uma equipe de fisioterapeutas altamente qualificados, que se dedicam a oferecer um
+                atendimento personalizado e eficaz. Nossos profissionais atuam com compromisso e cuidado humano, visando
+                à recuperação e à promoção da qualidade de vida dos nossos pacientes.</p>
+
+            <p>Nossos serviços abrangem uma ampla variedade de áreas da fisioterapia, incluindo fisioterapia ortopédica,
+                neurológica, pediátrica, geriátrica e reabilitação esportiva. Também oferecemos programas especializados
+                para controle de dor, prevenção de lesões e recuperação pós-operatória.</p>
+
+            <p>Localizada em uma região de fácil acesso, a FisioMais dispõe de um ambiente acolhedor e totalmente
+                equipado, pensado para garantir o conforto e a segurança de todos os nossos pacientes. Nosso espaço foi
+                cuidadosamente planejado para proporcionar um ambiente favorável à reabilitação e ao bem-estar.</p>
+        </main>
+    </section>
+
+    <!-- Rodapé com informações de contato e redes sociais -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logotipo adicional no rodapé para reforço de marca -->
+            <div class="footer-section logo">
+                <a href="index.html"><img src="logorodape.png" alt="Logo FisioMais"></a>
+            </div>
+
+            <!-- Informações de contato da clínica -->
+            <div class="footer-section contact">
+                <h4>Contato</h4>
+                <p>Email: contato@fisiomais.com</p>
+                <p>Telefone: (61) 90001-9999</p>
+                <p>Endereço: Asa Sul, Brasília - DF</p>
+            </div>
+
+            <!-- Links para redes sociais da clínica, com ícones e acessibilidade -->
+            <div class="footer-section social-media">
+                <h4>Siga-nos</h4>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank" aria-label="Twitter (X)"><i
+                        class="fab fa-x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://br.linkedin.com/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- Informações de copyright e aviso do projeto acadêmico -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 FisioMais. Todos os direitos reservados.</p>
+            <p>Este site é um projeto acadêmico do curso Técnico em Informática, ETB (Escola Técnica de Brasília). Não
+                representa uma entidade real.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

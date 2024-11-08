@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações da página -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva, ajustando o layout conforme a largura da tela -->
+    <title>Acompanhamento Personalizado - FisioMais</title> <!-- Título da página exibido na aba do navegador -->
+
+    <!-- Link para a folha de estilos de ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Favicon (ícone que aparece na aba do navegador) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Link para o arquivo CSS do site -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Pré-carregamento da fonte Roboto Condensed -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <!-- Caso o JavaScript esteja desativado, o link para a fonte será carregado aqui -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    </noscript>
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <!-- Logo da clínica, que leva à página inicial -->
+                <a href="index.html"><img src="logo.png" alt="Logo FisioMais"></a>
+            </div>
+            <!-- Menu de navegação com links para as páginas do site -->
+            <nav id="navbar" aria-label="Menu principal">
+                <ul class="menu">
+                    <!-- Links do menu com ícones representando cada página -->
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="avaliacao_inicial.html" class="active"><i class="fas fa-stethoscope"></i> Avaliação Inicial</a></li>
+                    <li><a href="fisioterapia.html" class="active"><i class="fas fa-plus-circle"></i> Fisioterapia</a></li>
+                    <li><a href="sobre.html" class="active"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção principal com informações sobre o Acompanhamento Personalizado -->
+    <section class="about-us">
+        <main class="container">
+            <h2>Acompanhamento Personalizado</h2> <!-- Título da seção -->
+            <p>O acompanhamento personalizado é essencial para garantir que você esteja progredindo em sua reabilitação. Durante esse processo, realizamos:</p>
+            <ul>
+                <!-- Lista com as atividades realizadas durante o acompanhamento -->
+                <li><i class="fas fa-check"></i> Reavaliações periódicas para monitorar sua evolução e fazer ajustes no tratamento.</li>
+                <li><i class="fas fa-check"></i> Recomendações de exercícios e práticas para serem realizadas em casa.</li>
+                <li><i class="fas fa-check"></i> Aconselhamento sobre hábitos de vida saudáveis que podem apoiar sua recuperação.</li>
+                <li><i class="fas fa-check"></i> Suporte emocional e motivacional durante toda a jornada de reabilitação.</li>
+            </ul>
+            <p>Nosso objetivo é assegurar que você tenha um caminho claro e eficaz rumo ao bem-estar.</p>
+        </main>
+    </section>
+
+    <!-- Rodapé com informações de contato e redes sociais -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <!-- Logo no rodapé, clicável e que leva à página inicial -->
+                <a href="index.html"><img src="logorodape.png" alt="Logo FisioMais"></a>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contato</h4>
+                <!-- Informações de contato da clínica -->
+                <p>Email: contato@fisiomais.com</p>
+                <p>Telefone: (61) 90001-9999</p>
+                <p>Endereço: Asa Sul, Brasília - DF</p>
+            </div>
+            <!-- Links para redes sociais com ícones e acessibilidade -->
+            <div class="footer-section social-media">
+                <h4>Siga-nos</h4>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank" aria-label="Twitter (X)"><i class="fab fa-x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://br.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- Informações de copyright e aviso do projeto acadêmico -->
+            <p>&copy; 2024 FisioMais. Todos os direitos reservados.</p>
+            <p>Este site é um projeto acadêmico do curso Técnico em Informática, ETB (Escola Técnica de Brasília). Não representa uma entidade real.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

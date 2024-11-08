@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags e título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FisioMais</title>
+
+    <!-- Link para a biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon da página -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Estilos CSS personalizados -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Carrega fonte do Google Fonts com preload para melhor performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Fallback para o caso de o JavaScript estar desativado -->
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    </noscript>
+</head>
+
+<body>
+    
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="header-container">
+            <!-- Logo da clínica com link para a página inicial -->
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo FisioMais"></a>
+            </div>
+
+            <!-- Menu de navegação principal -->
+            <nav id="navbar" aria-label="Menu principal">
+                <ul class="menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="fisioterapia.html" class="active"><i class="fas fa-plus-circle"></i> Fisioterapia </a>
+                    </li>
+                    <li><a href="form_login.html" class="active"><i class="fas fa-user-shield"></i> Área
+                            Administrativa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção principal com slideshow de imagens -->
+        <section class="hero">
+            <div class="hero-slideshow">
+                <div class="slides">
+                    <!-- Cada div representa um slide -->
+                    <div class="slide active">
+                        <img src="slide1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="slide2.png" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="slide3.png" alt="Slide 3">
+                    </div>
+                    <div class="slide">
+                        <img src="slide4.png" alt="Slide 4">
+                    </div>
+                </div>
+
+                <!-- Setas de navegação do slideshow -->
+                <div class="arrow arrow-left">&#10094;</div>
+                <div class="arrow arrow-right">&#10095;</div>
+            </div>
+        </section>
+
+        <!-- Seção de introdução à clínica -->
+        <section class="about-us">
+            <div class="container">
+                <h2>Bem-vindo à FisioMais</h2>
+                <p>Cuidamos do seu bem-estar físico com atenção especializada e métodos modernos de fisioterapia.</p>
+                <h2>Sobre Nós</h2>
+                <p>Na FisioMais, oferecemos serviços completos para sua recuperação e saúde física, com fisioterapeutas
+                    altamente qualificados.</p>
+                <a href="sobre.html" class="btn">Saiba Mais</a>
+            </div>
+        </section>
+
+        <!-- Seção de serviços oferecidos -->
+        <section class="services">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <p class="service-description">Clique em um dos serviços abaixo para saber mais.</p>
+
+                <div class="service-items">
+                    <!-- Blocos de cada serviço com links -->
+
+                    <!-- Serviço: Avaliação Inicial -->
+                    <div class="service-item">
+                        <a href="avaliacao_inicial.html" style="text-decoration: none; color: inherit;">
+                            <i class="fas fa-stethoscope fa-3x"></i>
+                            <h3>Avaliação Inicial</h3>
+                            <p>Consulta inicial para entender suas necessidades e definir o melhor plano de tratamento.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Serviço: Acompanhamento Personalizado -->
+                    <div class="service-item">
+                        <a href="acompanhamento_personalizado.html" style="text-decoration: none; color: inherit;">
+                            <i class="fas fa-user-check fa-3x"></i>
+                            <h3>Acompanhamento Personalizado</h3>
+                            <p>Suporte contínuo com profissionais para acompanhar o progresso e ajustar os tratamentos.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Serviço de Fisioterapia -->
+                    <div class="service-item">
+                        <a href="fisioterapia.html" style="text-decoration: none; color: inherit;">
+                            <i class="fas fa-walking fa-3x"></i> <!-- Ícone de pessoa caminhando -->
+                            <h3>Serviços de Fisioterapia</h3>
+                            <p>Tratamentos personalizados para sua reabilitação e bem-estar físico.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de dicas para recuperação -->
+        <section class="tips">
+            <div class="container">
+                <h2>Dicas para Sua Recuperação</h2>
+                <ul class="health-tips">
+                    <li><i class="fas fa-seedling"></i> Priorize uma alimentação balanceada para fortalecer músculos e
+                        tecidos.</li>
+                    <li><i class="fas fa-people-arrows"></i> Siga as orientações de alongamento recomendadas pelo
+                        fisioterapeuta.</li>
+                    <li><i class="fas fa-shoe-prints"></i> Realize os procedimentos de recuperação respeitando seus
+                        limites.</li>
+                    <li><i class="fas fa-balance-scale"></i> Mantenha uma postura correta ao se movimentar, para evitar
+                        lesões.</li>
+                    <li><i class="fas fa-hands-helping"></i> Busque apoio e converse com a equipe sobre dúvidas ou
+                        desconfortos.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé da página com informações de contato e redes sociais -->
+        <div class="footer-container">
+            <!-- Logo no rodapé -->
+            <div class="footer-section logo">
+                <a href="index.html"><img src="logorodape.png" alt="Logo FisioMais"></a>
+            </div>
+
+            <!-- Contato da clínica -->
+            <div class="footer-section contact">
+                <h4>Contato</h4>
+                <p>Email: contato@fisiomais.com</p>
+                <p>Telefone: (61) 90001-9999</p>
+                <p>Endereço: Asa Sul, Brasília - DF</p>
+            </div>
+
+            <!-- Links para redes sociais da clínica, com ícones e acessibilidade -->
+            <div class="footer-section social-media">
+                <h4>Siga-nos</h4>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank" aria-label="Twitter (X)"><i
+                        class="fab fa-x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://br.linkedin.com/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- Informações de copyright e aviso do projeto acadêmico -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 FisioMais. Todos os direitos reservados.</p>
+            <p>Este site é um projeto acadêmico do curso Técnico em Informática, ETB (Escola Técnica de Brasília). Não
+                representa uma entidade real.</p>
+        </div>
+
+        <!-- Botão do WhatsApp para contato direto -->
+        <div class="whatsapp-container">
+            <a href="https://chat.whatsapp.com/EZ82FI2dp4H56WOL8vnsxA" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <div class="whatsapp-tooltip">Aqui é a clínica FisioMais. Qualquer dúvida, é só mandar mensagem clicando
+                aqui!</div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para  dicas de recuperaçao
+        document.addEventListener('DOMContentLoaded', function () {
+            const tipsList = document.querySelector('.health-tips');
+            const tipsItems = tipsList.getElementsByTagName('li');
+            let currentItem = 0;
+
+            // Função para mostrar a próxima dica
+            function showNextTip() {
+                // Oculta o item atual
+                tipsItems[currentItem].style.display = 'none';
+                // Calcula o próximo item
+                currentItem = (currentItem + 1) % tipsItems.length;
+                // Exibe o próximo item
+                tipsItems[currentItem].style.display = 'block';
+            }
+
+            // Inicializa a exibição de todas as dicas, exceto a primeira
+            for (let i = 1; i < tipsItems.length; i++) {
+                tipsItems[i].style.display = 'none';
+            }
+
+            // Define o intervalo para mostrar a próxima dica a cada 5 segundos
+            setInterval(showNextTip, 5000);
+        });
+
+        // Script para o slideshow na seção de introdução
+        const slides = document.querySelectorAll('.slide');
+        const prevArrow = document.querySelector('.arrow-left');
+        const nextArrow = document.querySelector('.arrow-right');
+        let currentIndex = 0;
+
+        // Função para mudar o slide automaticamente
+        function changeSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentIndex = index < 0 ? slides.length - 1 : index % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+
+        // Função para avançar o slide
+        function nextSlide() {
+            changeSlide(currentIndex + 1);
+        }
+
+        // Função para voltar ao slide anterior
+        function prevSlide() {
+            changeSlide(currentIndex - 1);
+        }
+
+        // Configura as setas de navegação
+        nextArrow.addEventListener('click', nextSlide);
+        prevArrow.addEventListener('click', prevSlide);
+
+        // Alternância automática de slides a cada 8 segundos
+        setInterval(nextSlide, 8000);
+
+    </script>
+</body>
+
+</html>

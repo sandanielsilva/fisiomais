@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações da página -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva, ajustando o layout conforme a largura da tela -->
+    <title>FisioMais</title> <!-- Título da página exibido na aba do navegador -->
+
+    <!-- Link para a folha de estilos de ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Favicon (ícone que aparece na aba do navegador) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Link para o arquivo CSS do site -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Pré-carregamento da fonte Roboto Condensed -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <!-- Caso o JavaScript esteja desativado, o link para a fonte será carregado aqui -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    </noscript>
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <!-- Logo da clínica, que leva à página inicial -->
+                <a href="index.html"><img src="logo.png" alt="Logo FisioMais"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção principal de login -->
+    <main class="login-container">
+        <h1>Acessar painel</h1> <!-- Título principal da página -->
+        
+        <!-- Mensagem de alerta para informar que a página é restrita -->
+        <p class="warning-message">Esta página é destinada apenas a usuários autenticados.</p>
+        
+        <!-- Link para retornar à página inicial -->
+        <p class="redirect-message">Para voltar à página inicial, clique <a href="index.html">Aqui</a>.</p>
+        
+        <!-- Formulário de login -->
+        <form class="form_login" action="" method="POST" accept-charset="ISO-8859-1">
+            <!-- Campo de entrada para o nome de usuário -->
+            <div class="form-group">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" name="login" id="login" value="" required="">
+            </div>
+            <!-- Campo de entrada para a senha -->
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- Botão de envio do formulário -->
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+</body>
+
+</html>
